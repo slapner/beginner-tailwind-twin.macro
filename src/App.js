@@ -2,6 +2,7 @@
 import { GlobalStyles } from 'twin.macro';
 import About from './layout/About';
 import Build from './layout/Build';
+import FAQ from './layout/Faq';
 import Header from './layout/Header';
 import Learn from './layout/Learn';
 import Modules from './layout/Modules';
@@ -19,6 +20,7 @@ function App() {
 			<Build />
 			<Pricing />
 			<Modules />
+			<FAQ />
 		</div>
 	);
 }
