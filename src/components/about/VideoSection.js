@@ -12,9 +12,9 @@ const VideoSection = ({ children, videoUrl, title }) => (
 			title={title}
 			height="315"
 			src={videoUrl}
-			frameborder="0"
+			frameBorder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowfullscreen
+			allowFullScreen
 		></iframe>
 	</VideoSectionWrapper>
 );
