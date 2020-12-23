@@ -5,6 +5,7 @@ import Build from './layout/Build';
 import Header from './layout/Header';
 import Learn from './layout/Learn';
 import Overview from './layout/Overview';
+import Pricing from './layout/Pricing';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<About />
 			<Learn />
 			<Build />
+			<Pricing />
 		</div>
 	);
 }
