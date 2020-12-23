@@ -34,14 +34,9 @@ const LeftColumn = () => (
 		</p>
 		<p>
 			After using Bulma to build <Link href="https://scotch.io">Scotch.io</Link>
-			, my CSS files became littered with my own
-			<code tw="inline-block px-1 font-mono text-xs text-red-700 bg-gray-200 rounded">
-				!important
-			</code>
-			twes to override the framework's styles. Tailwind doesn't have the
-			<code tw="inline-block px-1 font-mono text-xs text-red-700 bg-gray-200 rounded">
-				!important
-			</code>
+			, my CSS files became littered with my own{' '}
+			<CodeBlock>!important</CodeBlock> classes to override the framework's
+			styles. Tailwind doesn't have the <CodeBlock>!important</CodeBlock>{' '}
 			problem since all our elements are designed on the fly.
 		</p>
 		<p>
@@ -68,6 +63,8 @@ const LeftColumn = () => (
 		</p>
 	</div>
 );
+
+const CodeBlock = tw.code`inline-block px-1 font-mono text-xs text-red-700 bg-gray-200 rounded`;
 
 const QuestionBubble = tw.div`p-10 bg-purple-800 rounded-lg`;
 
