@@ -1,13 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
 
-const Logo = tw.a`text-2xl font-bold text-teal-800 hover:text-teal-700`;
+import { BaseContainer } from '../CommonElements';
 
-const NavItem = ({ href, children }) => (
-	<a href={href} tw="hidden lg:inline-block hover:text-gray-900">
-		{children}
-	</a>
-);
+const Logo = tw.a`text-2xl font-bold text-teal-800 hover:text-teal-700`;
+const NavItem = tw.a`hidden lg:inline-block hover:text-gray-900`;
+const Container = tw(BaseContainer)`flex justify-between py-6`;
 
 const NavCTAButton = tw.button`hidden p-3 text-purple-700 transition duration-500 bg-purple-300 rounded shadow lg:inline-block hover:bg-purple-200 hover:text-purple-600 hover:shadow-xl`;
 
@@ -21,7 +19,7 @@ const navItems = [
 export default function Navigation() {
 	return (
 		<div tw="relative text-gray-600">
-			<div tw="container flex justify-between py-6 px-10 mx-auto">
+			<Container>
 				<div tw="flex items-center space-x-4">
 					<Logo href="/">Beginner Tailwind</Logo>
 					{navItems.map((item) => (
@@ -36,7 +34,7 @@ export default function Navigation() {
 					</a>
 					<NavCTAButton>Get the Course</NavCTAButton>
 				</div>
-			</div>
+			</Container>
 		</div>
 	);
 }

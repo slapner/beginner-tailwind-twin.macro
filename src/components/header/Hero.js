@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
-import BaseContainer from '../../layout/BaseContainer';
+import { BaseContainer } from '../CommonElements';
 import TeaserImage from './TeaserImage';
 
 const PurpleBar = tw.div`absolute inset-x-0 bottom-0 h-64 bg-purple-700`;
