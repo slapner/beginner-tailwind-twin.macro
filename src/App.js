@@ -4,6 +4,7 @@ import About from './layout/About';
 import Build from './layout/Build';
 import Header from './layout/Header';
 import Learn from './layout/Learn';
+import Modules from './layout/Modules';
 import Overview from './layout/Overview';
 import Pricing from './layout/Pricing';
 
@@ -17,6 +18,7 @@ function App() {
 			<Learn />
 			<Build />
 			<Pricing />
+			<Modules />
 		</div>
 	);
 }
